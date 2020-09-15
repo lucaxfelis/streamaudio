@@ -1,5 +1,4 @@
 # StreamAudio
-<hr>
 
 Projeto desenvolvido para obtenção de nota na disciplina IF976 - Banco de Dados, do curso de Sistemas de Informação, da Universidade Federal de Pernambuco.
 
