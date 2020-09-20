@@ -11,7 +11,7 @@ Consiste no desenvolvimento do projeto de banco de dados de uma aplicação de s
 * Descrição do Mini-mundo e Projeto Conceitual
 
 ## Vídeos do Projeto Conceitual
-Os vídeos se encontram em uma [pasta no drive acessível clicando aqui](https://drive.google.com/file/d/1kTPOjSnhyb9kxzoNub9FrV6hwr3rvn6e/view?usp=sharing).
+Os vídeos se encontram em uma [pasta no drive acessível clicando aqui](https://drive.google.com/drive/folders/1a96cQnd3LziFvVsmTFvdW81Jpb-Fz2fF?usp=sharing).
 
 ## Autores
 
