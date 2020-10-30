@@ -369,6 +369,6 @@ INSERT INTO PlaylistMusica(id,id_usuario,id_playlist,id_musica) VALUES (DEFAULT,
 INSERT INTO PlaylistMusica(id,id_usuario,id_playlist,id_musica) VALUES (DEFAULT,'5','5','58');
 /* playslistMusica(id,id_usuario,id_playlist,id_musica) */
 
-
-
-
+/* Artista que não está em nenhuma biblioteca */
+INSERT INTO Usuario VALUES (DEFAULT,'bk001@gmail.com','mc bk','senha123','cartao','15%','artista');
+INSERT INTO artista(id,nome,id_usuario) VALUES (DEFAULT,'mc bk','26');
