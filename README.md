@@ -18,6 +18,8 @@ O projeto do banco de dados implementado em SQL possui os seguintes arquivos, im
 - inserts.sql (Povoamento das tabelas)
 - selects.sql (Buscas principais, envolvendo as tabelas e mecanismos aprendidos durante as aulas)
 
+Observação: Por algum motivo ao copiar os scripts inteiros no editor online eles podem apresentar simplesmente não apresentar nenhuma mensagem de sucesso (Ou um erro vazio), nesse caso pode haver algum problema na criação/povoamento das tabelas, acredito ser um bug da plataforma online. Caso utilizar a plataforma online recomendo executar os arquivos em blocos, para que o sistema consiga processar eles com mais facilidade.
+
 ## Autores
 
 * Alisson Diego Diniz Duarte da Fonseca
