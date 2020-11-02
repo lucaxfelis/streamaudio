@@ -31,6 +31,10 @@ FROM USUARIO;
 SELECT COUNT(*) AS QTD_MUSICAS
 FROM MUSICA;
 
+/* Projetar a quantidade de faixas cadastradas em um Album */
+SELECT COUNT(*) AS FAIXAS
+FROM MUSICA M GROUP BY M.id_album ;
+
 
 /* Projetar os gêneros existentes nas músicas cadastradas, sem duplicatas */
 SELECT DISTINCT GENERO1 AS GENEROS
@@ -60,6 +64,27 @@ SELECT *
 FROM MUSICA
 WHERE GENERO2 IS NULL AND (GENERO1 = 'rock alternativo' OR GENERO1 = 'maracatu');
 
+/* Calcula a quantidade de faixas por album e ao lado apresenta o nome do album. */
+SELECT 
+    COUNT(*) AS FAIXAS, 
+    (SELECT A.nome 
+    FROM ALBUM A 
+    WHERE A.id = M.id_album) AS ALBUM 
+FROM MUSICA M  
+GROUP BY M.id_album ;
+
+/* Obtem a duração de todos os albuns cadastrados. */
+SELECT NUMTODSINTERVAL(
+        SUM((
+            extract(second from M.duracao) +
+            extract(minute from M.duracao) * 60 +
+            extract(hour from M.duracao)  * 60 * 60
+        )), 'SECOND') as DURAÇÃO,
+    (SELECT A.nome 
+        FROM ALBUM A 
+        WHERE A.id = M.id_album) AS ALBUM
+    FROM Musica M 
+    GROUP BY id_album;
 
 /* OBS: Comprar é uma entidade associativa que possui chaves estrangeiras para usuario, audiobook e desconto */
 /* (OLD SCHOOL INNER JOIN) Caso um usuário tenha algum desconto na compra de um audiobook, projeta seu e-mail, titulo do audiobook e o respectivo desconto */
