@@ -24,5 +24,5 @@ Observação: Por algum motivo ao copiar os scripts inteiros no editor online el
 
 * Alisson Diego Diniz Duarte da Fonseca
 * Gabriel Vanderlei de Oliveira
-* Lucas Felix de Aguair
+* Lucas Felix de Aguiar
 * Samuel Ferreira de Farias Barbosa
